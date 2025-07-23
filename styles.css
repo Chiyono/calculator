@@ -1,0 +1,100 @@
+body{
+  background: #352f5b;
+}
+form {
+  max-width: 400px;
+  min-width: 400px;
+}
+
+.container {
+  max-width: 900px;
+}
+
+
+input[type=text],
+input[type=text]:focus{
+  color: #fff;
+  border: none;
+  background: rgba(0,0,0,0.2);
+  max-width: 400px;
+}
+
+.rates li{
+  background: #423a6f;
+}
+
+div .success,
+div .success:focus {
+  /* border-color: #28a745; */
+  box-shadow: 0 0 0 0.2rem rgba(83, 180, 104, 0.5);
+}
+
+div .error,
+div .error:focus {
+    /* border-color: #28a745; */
+    box-shadow: 0 0 0 0.2rem rgba(220, 20, 60, 0.5);
+}
+
+div .del-col,
+div .del-col:focus
+ {
+  max-width: 150px;
+}
+
+div .qty,
+div .qty:focus
+ {
+  max-width: 50px;
+}
+
+  a.link-btn {
+  padding: 15px 35px;
+  background: #423a6f;
+  border-radius: 50px;
+  border: 2px solid rgba(0,0,0,0.5);
+  text-transform: uppercase;
+  padding: 15px 100px;
+  color: white;
+  width: 300px;
+  margin: 10px 0;
+}
+
+.links {
+  max-width: 400px;
+  min-width: 400px;
+}
+
+@media only screen and (max-width: 829px) {
+  .right-side {
+    order: -1;
+  }
+}
+
+.city {
+  max-width: 300px;
+  min-width: 300px;
+}
+
+.temp {
+  max-width: 400px;
+}
+
+.wet {
+  max-width: 100px;
+}
+
+.filter-white{
+        filter: invert(91%) sepia(60%) saturate(27%) hue-rotate(81deg) brightness(102%) contrast(106%);
+    }
+
+.hidden {
+  display: none;
+}
+
+.weather-Buttons {
+      font-size: 2rem;
+    }
+
+i {
+  cursor: pointer;
+}

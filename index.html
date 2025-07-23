@@ -1,0 +1,124 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <title>Weekly Charge Calculator</title>
+</head>
+<body>
+
+  <div class="container">
+
+    <header class="text-center text-light my-4">
+      <h1 class="mb-4">Weekly Charge Calculator</h1>
+    </header>
+
+
+
+    <div class= "text-center text-light my-4 d-flex justify-content-center flex-wrap">
+      <form class="dates">
+        <!-- Dates -->
+        <label class="text-light mt-3">Date Range</label>
+        <input class="form-control mb-2 success" type="text" name="start" placeholder="Start Date" autocomplete="off" onfocus="this.select();"/>
+        <input class="form-control mt-2 success" type="text" name="end" placeholder="End Date" autocomplete="off" onfocus="this.select();"/>
+        <!-- Price -->
+        <label class="text-light mt-3">Enter Price</label>
+        <input class="form-control m-auto" type="text" name="price" placeholder="Price" autocomplete="off" onfocus="this.select();"/>
+        <!-- 5 Or 7 Day rate -->
+        <div class="form-check form-check-inline mt-2">
+          <input class="form-check-input" type="radio" name="chargeType" id="inlineRadio1" value="5day" checked="checked">
+          <label class="form-check-label" for="inlineRadio1">5 Day Rate</label>
+        </div>
+        <div class="form-check form-check-inline mt-2">
+          <input class="form-check-input" type="radio" name="chargeType" id="inlineRadio2" value="7day">
+          <label class="form-check-label" for="inlineRadio2">7 Day Rate</label>
+        </div>
+
+        <!-- Quantity -->
+        <div class="d-flex align-items-center mt-3">
+          <label class="text-light mb-0">Quantity</label>
+          <input class="form-control ml-2 qty" type="text" name="quantity" placeholder="Qty" autocomplete="off" onfocus="this.select();"/>
+        </div>
+
+        <!-- Delivery & Collection -->
+        <div class="d-flex justify-content-between align-items-center text-left">
+          <div>
+            <label class="text-light mt-3 ml-1 mb-1">Delivery</label>
+            <input class="form-control del-col" type="text" name="delivery" placeholder="Delivery" autocomplete="off" onfocus="this.select();"/>
+          </div>
+          <div>
+            <label class="text-light mt-3 ml-1 mb-1">Collection</label>
+            <input class="form-control del-col" type="text" name="collection" placeholder="Collection" autocomplete="off" onfocus="this.select();"/>
+          </div>
+        </div>
+
+      </form>
+
+      <div class="right-side">
+
+
+<!--
+      <div class="d-flex flex-wrap align-content-center justify-content-center links">
+        <!-- <a href="https://robertson.coinscloud.com/env/live/wocoins.p" class="link-btn" target="_blank">Coins</a><br>
+        <a href="https://www.speedyservices.com/login" class="link-btn speedy" target="_blank">My Speedy</a><br>
+        <a href="https://robertson.people-first.com/" class="link-btn" target="_blank">Holidays</a><br>
+        <a href="https://ractelematics.rac.co.uk/Dashboard" class="link-btn" target="_blank">Trackers</a><br> 
+      </div>
+
+       <div class="time">
+
+         <h2 class="text-center text-light mt-4 mb-0">Current Time</h2>
+        <div class="date text-center text-light">Loading</div>
+        <div class="clock text-center text-light mt-0"></div>
+
+      </div> -->
+
+
+
+        
+        <div class="temp text-center text-light mt-0 d-flex justify-content-between"></div>
+
+
+        <div class="button-container hidden">
+        <div class="weather-buttons d-flex justify-content-around mb-4">
+          <i class="fas fa-backward back"></i>
+          <i class="fas fa-redo-alt refresh"></i>
+          <i class="fas fa-forward next"></i>
+          <!-- <i class="fas fa-fast-forward nextDay"></i> -->
+          <i class="far fa-trash-alt delete"></i>
+        </div>
+      </div>
+
+
+
+
+
+        
+      </div>
+
+
+
+
+
+
+
+      </div>
+      <ul class="list-group rates mx-auto text-light">
+        <!-- <li class="list-group-item d-flex justify-content-between align-items-center weDate">
+        <span>w/e</span>
+        <i class="far fa-trash-alt delete"></i>
+      </li> -->
+    </ul>
+
+    </div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/date-fns/1.30.1/date_fns.min.js" integrity="sha512-F+u8eWHrfY8Xw9BLzZ8rG/0wIvs0y+JyRJrXjp3VjtFPylAEEGwKbua5Ip/oiVhaTDaDs4eU2Xtsxjs/9ag2bQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="app18.js"></script>
+<script src="forecast.js"></script>
+<script src="location.js"></script>
+</body>
+</html>
